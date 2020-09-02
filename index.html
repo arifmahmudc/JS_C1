@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    	.row1{
+    		margin-top: 10px;
+    	}
+    </style>
+    <title>JavaScript_C1</title>
+  </head>
+  <body>
+    <section class="service">
+    	<div class="container">
+    		<div class="row justify-content-center row1">
+    			<div class="col-md-12 text-center rounded border border-info">
+    				
+            		<!-- js -->
+            		<h1>Click the button to see the changes!!!</h1>
+
+            		<button type="button" class="btn btn-outline-dark" onclick="textChange()">Click Me!</button>
+            		<button type="button" class="btn btn-outline-warning" onclick="window.location.reload();">Refresh</button>
+
+            		<p>
+            			<div class="alert alert-warning alert-dismissible fade show border border-success" id="p" role="alert">
+  							Hello, I am <strong>Arif Mahmud</strong>. Hope you are doing well.
+  							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    							<span aria-hidden="true">&times;</span>
+  							</button>
+						</div>
+            		</p>
+            		<!-- js -->
+
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!-- js links-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+    	function textChange() {
+    		document.getElementById('p').innerHTML ="I am a <strong>Full Stack Web Developer</strong>";
+    	}
+    </script>
+  </body>
+</html>
